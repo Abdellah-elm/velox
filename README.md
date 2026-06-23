@@ -1,7 +1,7 @@
 # Velox  LLM Inference Engine
 
 
-A from-scratch LLM inference engine built lot by lot — each lot adds one mechanism, measures it rigorously, and documents honestly what works and what doesn't.
+A from-scratch LLM inference engine built lot by lot  each lot adds one mechanism, measures it rigorously, and documents honestly what works and what doesn't.
 
 serving a language model under concurrent load is fundamentally different from calling `model.generate()` in a loop. This project builds the layer that makes the difference — KV cache, continuous batching, block-based memory management, OpenAI-compatible API — and integrates it as the backend of [GuardRAG](https://github.com/Abdellah-elm/guard_RAG), a production RAG assistant over Qiskit/IBM Quantum documentation.
 
