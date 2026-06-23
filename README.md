@@ -147,9 +147,6 @@ python velox_l8.py --validate --velox-url http://localhost:8000
 - Streaming SSE — token-by-token, client disconnect handled
 
 **What doesn't work as expected, and why:**
-- KV cache gain = 1.0× on GPU short sequences: `model.generate()` already uses CUDA cache internally
-- L4 block pool: memory management logic correct; physical K/V storage in blocks requires stable `DynamicCache` API, changed in transformers 5.x without backward compatibility
-- L3 continuous batching: scheduling correct; true batched decode per step requires L4 + stable cache API
 - vLLM gap (~3×): expected — vLLM uses PagedAttention with Triton CUDA kernels
 
 **Key architectural decisions:**
