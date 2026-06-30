@@ -16,7 +16,8 @@ User query → GuardRAG (guardrails · routing · semantic cache · faithfulness
                   ↓
         Qwen/Qwen2.5-0.5B-Instruct  (open-weight, T4-runnable)
 ```
-
+**DEMO**
+![demo](pic/S.png)
 ---
 
 ## Lot roadmap
